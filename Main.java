@@ -38,12 +38,10 @@ class Main {
 
       while (i < sizeOne && j < sizeTwo) {
         if (left[i] <= right[j]) {
-          arr[k] = left[i++];
+          arr[k++] = left[i++];
         } else {
-          arr[k] = right[j++];
+          arr[k++] = right[j++];
         }
-        k++;
-
       }
 
       while (i < sizeOne) {
